@@ -1,0 +1,27 @@
+{
+  "version": "1.5.1",
+  "notes": "Auto build for v1.5.1",
+  "pub_date": "2025-12-02T07:39:15.048Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhuVW5WaHVvYUs1YTBZWVY5Q0ZoQ2tKbmVyK0hQR1hKQ3NyTnpTTDVwR2FoU1lSUXZ2RzlQcThXdDhFZ2txaGM2OFVqRU9LNnNtZTJ0bEN5bzh6c1pLRXA5aUV2WlFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0NjU5OTE2CWZpbGU6eC1ib3JkZXIuYXBwLnRhci5nego2dFdLS3BLa0FQOGJsMTkzYjFLK3RNdE9pbDlWRTl0SkdUWlRnYUpkei9zMTUxZk1MTUN3NVhrcTlyVVVBazFCNHFobmQrMDlMRmpVaTV4OGNySjBDQT09Cg==",
+      "url": "https://github.com/X-Border/X-Border-Updates/releases/download/v1.5.1/x-border_aarch64.app.tar.gz"
+    },
+    "darwin-aarch64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhuVW5WaHVvYUs1YTBZWVY5Q0ZoQ2tKbmVyK0hQR1hKQ3NyTnpTTDVwR2FoU1lSUXZ2RzlQcThXdDhFZ2txaGM2OFVqRU9LNnNtZTJ0bEN5bzh6c1pLRXA5aUV2WlFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0NjU5OTE2CWZpbGU6eC1ib3JkZXIuYXBwLnRhci5nego2dFdLS3BLa0FQOGJsMTkzYjFLK3RNdE9pbDlWRTl0SkdUWlRnYUpkei9zMTUxZk1MTUN3NVhrcTlyVVVBazFCNHFobmQrMDlMRmpVaTV4OGNySjBDQT09Cg==",
+      "url": "https://github.com/X-Border/X-Border-Updates/releases/download/v1.5.1/x-border_aarch64.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhuVW5WaHVvYUtOcVYxbTR2V0RuZm0reEdoQk1hYVo1NGE4Q3BsZG55MDJBSXFXODRCcmxROE9ESkUzeVdsZTBIRHRIeUZFdVNjc2Jkc2daeVlaRHRacEZuRy9LcEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0NjYxMTUwCWZpbGU6eC1ib3JkZXJfMS41LjFfeDY0X2VuLVVTLm1zaQo0d0FSa1VYMTN1bVRpQVRmMk5hTlhnSE0zWElPNzFlUkdvckQ2ZGlSVzFqL0ZvQVRkbG96eG0wMzZ5dEVDcFZROWMxOXM4N2xoOEhwQ1U0a0I2Y1REUT09Cg==",
+      "url": "https://github.com/X-Border/X-Border-Updates/releases/download/v1.5.1/x-border_1.5.1_x64_en-US.msi"
+    },
+    "windows-x86_64-msi": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhuVW5WaHVvYUtOcVYxbTR2V0RuZm0reEdoQk1hYVo1NGE4Q3BsZG55MDJBSXFXODRCcmxROE9ESkUzeVdsZTBIRHRIeUZFdVNjc2Jkc2daeVlaRHRacEZuRy9LcEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0NjYxMTUwCWZpbGU6eC1ib3JkZXJfMS41LjFfeDY0X2VuLVVTLm1zaQo0d0FSa1VYMTN1bVRpQVRmMk5hTlhnSE0zWElPNzFlUkdvckQ2ZGlSVzFqL0ZvQVRkbG96eG0wMzZ5dEVDcFZROWMxOXM4N2xoOEhwQ1U0a0I2Y1REUT09Cg==",
+      "url": "https://github.com/X-Border/X-Border-Updates/releases/download/v1.5.1/x-border_1.5.1_x64_en-US.msi"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTalhuVW5WaHVvYUxubW5lNnF0Y2s3cG0rc0tyOVdKNDFaWkIyK0JXUnBVN1Z1QURaUDRMaWJDdkcrMkJPQS95YkVuNFJiTWdjdHdBbEMzTjZiUVJhWHVrdjdCeVkvT1FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0NjYxMTUwCWZpbGU6eC1ib3JkZXJfMS41LjFfeDY0LXNldHVwLmV4ZQp6Nk54QUh4VVZnMlc4YWUxV2EyZDcrMlhWODNrTGQwYWV4THRTZ2tSTEYzQUYyeG8rZmMzZWZTV0htYXBkc2hhK0NMMCt6NmhEcjR1ZGp5cEliY21CUT09Cg==",
+      "url": "https://github.com/X-Border/X-Border-Updates/releases/download/v1.5.1/x-border_1.5.1_x64-setup.exe"
+    }
+  }
+}
