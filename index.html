@@ -86,18 +86,23 @@
             color: #6c757d;
         }
         .error {
-            background: #fee;
-            border-left: 4px solid #f44;
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
             padding: 20px;
             border-radius: 4px;
-            color: #c33;
+            color: #856404;
         }
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+        }
+        .empty-state h3 { margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🚀 X-Border Updates</h1>
             <p>X-Border 应用更新服务器</p>
         </div>
         <div class="content">
@@ -116,6 +121,20 @@
         async function loadLatest() {
             try {
                 const response = await fetch('latest.json');
+                
+                if (!response.ok) {
+                    if (response.status === 404) {
+                        document.getElementById('latest-content').innerHTML = `
+                            <div class="empty-state">
+                                <h3>暂无发布版本</h3>
+                                <p>请先发布一个 Release 以生成更新信息</p>
+                            </div>
+                        `;
+                        return;
+                    }
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
                 const data = await response.json();
                 const content = document.getElementById('latest-content');
                 
@@ -138,19 +157,33 @@
                     <div class="download-links">${platforms}</div>
                 `;
             } catch (error) {
+                console.error('Failed to load latest.json:', error);
                 document.getElementById('latest-content').innerHTML = 
-                    `<div class="error">加载失败: ${error.message}</div>`;
+                    `<div class="error">⚠️ 加载失败: ${error.message}</div>`;
             }
         }
 
         async function loadVersions() {
             try {
                 const response = await fetch('versions.json');
+                
+                if (!response.ok) {
+                    if (response.status === 404) {
+                        document.getElementById('versions-content').innerHTML = `
+                            <div class="empty-state">
+                                <p>版本列表为空</p>
+                            </div>
+                        `;
+                        return;
+                    }
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
                 const data = await response.json();
                 const content = document.getElementById('versions-content');
                 
                 if (!data.versions || data.versions.length === 0) {
-                    content.innerHTML = '<p>暂无历史版本</p>';
+                    content.innerHTML = '<div class="empty-state"><p>暂无历史版本</p></div>';
                     return;
                 }
                 
@@ -170,8 +203,9 @@
                 
                 content.innerHTML = versionsHtml;
             } catch (error) {
+                console.error('Failed to load versions.json:', error);
                 document.getElementById('versions-content').innerHTML = 
-                    `<div class="error">加载失败: ${error.message}</div>`;
+                    `<div class="error">⚠️ 加载失败: ${error.message}</div>`;
             }
         }
 
@@ -181,3 +215,4 @@
     </script>
 </body>
 </html>
+
